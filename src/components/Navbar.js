@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import fire from "../fire"
+
+const handleLogout = () => {
+    fire.auth().signOut();
+}
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -29,6 +34,11 @@ function Navbar() {
                             onClick={closeMobileMenu}
                         >
                             Explore Sharks
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link className='nav-links' onClick={handleLogout}>
+                            <img alt="logout" src="https://img.icons8.com/cotton/30/000000/logout-rounded-left.png" />
                         </Link>
                     </li>
                 </ul>

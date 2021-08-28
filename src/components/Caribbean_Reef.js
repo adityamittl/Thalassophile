@@ -11,7 +11,7 @@ const state = proxy({
 
 function Model(props) {
     const group = useRef()
-    const { nodes, materials } = useGLTF('/humpback_whale/scene.gltf')
+    const { nodes, materials } = useGLTF('/model_54a_-_caribbean_reef_shark/scene.gltf')
     const [hovered, set] = useState(null)
     return (
         <group ref={group} {...props} dispose={null}
@@ -21,11 +21,18 @@ function Model(props) {
             onPointerDown={(e) => (e.stopPropagation(), (state.current = e.object.material.name))}
         >
             <group rotation={[-Math.PI / 2, 0, 0]}>
-                <group rotation={[Math.PI / 2, 0, 0]}>
-                    <mesh geometry={nodes.desirefxme_001_BottlenoseDolphin_0.geometry} material={materials.BottlenoseDolphin} />
-                    <mesh geometry={nodes.desirefxme_002_BottlenoseDolphin_0.geometry} material={materials.BottlenoseDolphin_0} />
-                </group>
-            </group>
+        <primitive object={nodes.CRS_Armature_rootJoint} />
+        <skinnedMesh
+          geometry={nodes.Carribean_Shark001_0.geometry}
+          material={materials.Diffuse_Eye}
+          skeleton={nodes.Carribean_Shark001_0.skeleton}
+        />
+        <skinnedMesh
+          geometry={nodes.Carribean_Shark001_1.geometry}
+          material={materials.CRS_Material}
+          skeleton={nodes.Carribean_Shark001_1.skeleton}
+        />
+      </group>
         </group>
     )
 }
@@ -35,7 +42,7 @@ function Details() {
     return (
         <div className="pb-12 w-full ">
             {snap.current}
-            The humpback whale (Megaptera novaeangliae) is a species of baleen whale. It is one of the larger rorqual species, with adults ranging in length from 12–16 m (39–52 ft) and weighing around 25–30 t (28–33 short tons). The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers.
+            The Caribbean reef shark (Carcharhinus perezi) is a species of requiem shark, belonging to the family Carcharhinidae. It is found in the tropical waters of the western Atlantic Ocean from Florida to Brazil, and is the most commonly encountered reef shark in the Caribbean Sea. With a robust, streamlined body typical of the requiem sharks, this species is difficult to tell apart from other large members of its family such as the dusky shark (C. obscurus) and the silky shark (C. falciformis).
         </div>
     );
 }
@@ -51,7 +58,7 @@ export default function White_Shark() {
                         <ambientLight intensity={0.7} />
                         <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                         <Suspense fallback={null}>
-                            <Model scale={0.35} />
+                            <Model scale={0.8} />
                             <Environment preset="city" />
                             <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>
@@ -60,7 +67,7 @@ export default function White_Shark() {
                 </div>
 
                 <div className="modelDetails">
-                    <div className="modelTitle">Humpback whale</div>
+                    <div className="modelTitle">Caribbean reef shark</div>
                     <Details />
                 </div>
             </div>
