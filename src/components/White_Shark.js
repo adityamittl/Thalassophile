@@ -43,7 +43,7 @@ function Details() {
 export default function White_Shark() {
     return (
         <>
-            <Link to="/" style={{ margin: "50px", float: "left"}}>Go Back</Link>
+            <Link to="/" style={{ margin: "50px", float: "left" }}>Go Back</Link>
             <div className="modelContainer">
 
                 <div className="modelDiv">

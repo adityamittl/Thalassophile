@@ -35,12 +35,12 @@ function Details() {
     return (
         <div className="pb-12 w-full ">
             {snap.current}
-            The humpback whale (Megaptera novaeangliae) is a species of baleen whale. It is one of the larger rorqual species, with adults ranging in length from 12–16 m (39–52 ft) and weighing around 25–30 t (28–33 short tons). The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers.
+            The humpback whale (Megaptera novaeangliae) is a species of baleen whale. It is one of the larger rorqual species, with adults ranging in length from 12–16 m (39–52 ft) and weighing around 25–30 t (28–33 short tons). The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers. This work is based on "Humpback whale" (https://sketchfab.com/3d-models/humpback-whale-2a83b52bfe7f47a1b6c404a90b100dca) by AVINAS (https://sketchfab.com/AVINAS) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
         </div>
     );
 }
 
-export default function White_Shark() {
+export default function Humpback_Whale() {
     return (
         <>
             <Link to="/" style={{ margin: "50px", float: "left" }}>Go Back</Link>

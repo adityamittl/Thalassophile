@@ -7,6 +7,8 @@ import HumpbackWhale from "./components/Humpback_Whale"
 import HammerHead from "./components/Hammer_Head"
 import CaribbeanReef from "./components/Caribbean_Reef"
 import TigerShark from "./components/Tiger_Shark"
+import Turtle from "./components/Turtle"
+import Seal from "./components/Seal"
 import Chatbot from './components/Chatbot';
 
 function Main() {
@@ -20,6 +22,8 @@ function Main() {
         <Route path='/hammerHead' exact component={HammerHead} />
         <Route path='/caribbeanReef' exact component={CaribbeanReef} />
         <Route path='/tigerShark' exact component={TigerShark} />
+        <Route path='/turtle' exact component={Turtle} />
+        <Route path='/seal' exact component={Seal} />
         <Redirect to="/" />
       </Switch>
       <Chatbot />

@@ -66,7 +66,7 @@ function Details() {
     );
 }
 
-export default function White_Shark() {
+export default function Tiger_Shark() {
     return (
         <>
             <Link to="/" style={{ margin: "50px", float: "left" }}>Go Back</Link>
