@@ -1,0 +1,11 @@
+Model Information:
+* title:	Humpback whale
+* source:	https://sketchfab.com/3d-models/humpback-whale-2a83b52bfe7f47a1b6c404a90b100dca
+* author:	AVINAS (https://sketchfab.com/AVINAS)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Humpback whale" (https://sketchfab.com/3d-models/humpback-whale-2a83b52bfe7f47a1b6c404a90b100dca) by AVINAS (https://sketchfab.com/AVINAS) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

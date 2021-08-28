@@ -1,0 +1,17 @@
+.modelContainer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 50px 80px;
+}
+
+.modelDiv{
+    width: 80%;
+    height: 80%;
+    padding: 20px 10px;
+    cursor: pointer;
+    grid-column: span 2 / span 2;
+}
+
+.modelDetails{
+    min-height: 500px;
+}
