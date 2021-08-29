@@ -1,6 +1,6 @@
 .modelContainer{
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
     padding: 50px 30px;
 }
@@ -10,7 +10,7 @@
     height: 80%;
     padding: 20px 10px;
     cursor: pointer;
-    grid-column: span 2 / span 2;
+    /* grid-column: span 2 / span 2; */
 }
 
 .modelDetails{
@@ -20,4 +20,19 @@
 
 .modelTitle{
     font-size: 3rem;
+}
+
+.QRContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.QRCode{
+    width: 60%;
+}
+
+.AR_button{
+    margin-top: 50px;
+    margin-left: -40px;
 }

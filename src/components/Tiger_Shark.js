@@ -60,7 +60,6 @@ function Details() {
     const snap = useSnapshot(state)
     return (
         <div className="pb-12 w-full ">
-            {snap.current}
             The tiger shark (Galeocerdo cuvier) is a species of requiem shark and the only extant member of the genus Galeocerdo. It is a large macropredator, capable of attaining a length over 5 m (16 ft 5 in). Populations are found in many tropical and temperate waters, especially around central Pacific islands. Its name derives from the dark stripes down its body, which resemble a tiger's pattern, but fade as the shark matures.
         </div>
     );
@@ -77,17 +76,23 @@ export default function Tiger_Shark() {
                         <ambientLight intensity={0.7} />
                         <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
                         <Suspense fallback={null}>
-                            <Model scale={0.08} />
+                            <Model scale={0.07} />
                             <Environment preset="city" />
                             <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>
-                        <OrbitControls />
+                        <OrbitControls autoRotate/>
                     </Canvas>
                 </div>
 
                 <div className="modelDetails">
                     <div className="modelTitle">Tiger shark</div>
                     <Details />
+                    <div className="QRContainer">
+                        <img className="QRCode" src="https://storage.echoar.xyz/wispy-violet-4999/02390fca-e971-456c-82e4-3debf8cc3fcf" alt="QR" />
+                        <a href="https://go.echoar.xyz/xbJS" target="_blank" rel="noreferrer">
+                            <button className="AR_button">View in AR</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

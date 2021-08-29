@@ -1,14 +1,5 @@
 # Thalassophile
 
-<!-- Temp -->
-
-To do:
-
-- [x] Login/Sign Up
-- [x] Home page(cards of various shark specied and other sea animals)
-- [ ] Click on model for parts and AR
-- [x] Chatbot
-
 ## Why the name **Thalassophile**
 
 Thalassophile means a lover of the sea.

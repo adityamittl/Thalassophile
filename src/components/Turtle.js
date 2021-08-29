@@ -55,7 +55,6 @@ function Details() {
     const snap = useSnapshot(state)
     return (
         <div className="pb-12 w-full ">
-            {snap.current}
             Once hatchlings leave the nest, they are often not seen again until they return to coastal waters years later as juveniles. Loggerheads that are born on the east coast of the U.S. however, have been tracked out into the Atlantic, into an area known as the Sargasso Sea.
         </div>
     );
@@ -76,13 +75,19 @@ export default function Turtle() {
                             <Environment preset="city" />
                             <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>
-                        <OrbitControls />
+                        <OrbitControls autoRotate />
                     </Canvas>
                 </div>
 
                 <div className="modelDetails">
                     <div className="modelTitle">Juvenile Leatherback Sea Turtle</div>
                     <Details />
+                    <div className="QRContainer">
+                        <img className="QRCode" src="https://storage.echoar.xyz/wispy-violet-4999/0c5c6f87-db2e-4814-900d-5bab49c460c5" alt="QR" />
+                        <a href="https://go.echoar.xyz/dypn" target="_blank" rel="noreferrer">
+                            <button className="AR_button">View in AR</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

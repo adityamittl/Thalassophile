@@ -21,18 +21,18 @@ function Model(props) {
             onPointerDown={(e) => (e.stopPropagation(), (state.current = e.object.material.name))}
         >
             <group rotation={[-Math.PI / 2, 0, 0]}>
-        <primitive object={nodes.CRS_Armature_rootJoint} />
-        <skinnedMesh
-          geometry={nodes.Carribean_Shark001_0.geometry}
-          material={materials.Diffuse_Eye}
-          skeleton={nodes.Carribean_Shark001_0.skeleton}
-        />
-        <skinnedMesh
-          geometry={nodes.Carribean_Shark001_1.geometry}
-          material={materials.CRS_Material}
-          skeleton={nodes.Carribean_Shark001_1.skeleton}
-        />
-      </group>
+                <primitive object={nodes.CRS_Armature_rootJoint} />
+                <skinnedMesh
+                    geometry={nodes.Carribean_Shark001_0.geometry}
+                    material={materials.Diffuse_Eye}
+                    skeleton={nodes.Carribean_Shark001_0.skeleton}
+                />
+                <skinnedMesh
+                    geometry={nodes.Carribean_Shark001_1.geometry}
+                    material={materials.CRS_Material}
+                    skeleton={nodes.Carribean_Shark001_1.skeleton}
+                />
+            </group>
         </group>
     )
 }
@@ -41,7 +41,6 @@ function Details() {
     const snap = useSnapshot(state)
     return (
         <div className="pb-12 w-full ">
-            {snap.current}
             The Caribbean reef shark (Carcharhinus perezi) is a species of requiem shark, belonging to the family Carcharhinidae. It is found in the tropical waters of the western Atlantic Ocean from Florida to Brazil, and is the most commonly encountered reef shark in the Caribbean Sea. With a robust, streamlined body typical of the requiem sharks, this species is difficult to tell apart from other large members of its family such as the dusky shark (C. obscurus) and the silky shark (C. falciformis).
         </div>
     );
@@ -62,13 +61,19 @@ export default function Caribbean_Reef() {
                             <Environment preset="city" />
                             <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>
-                        <OrbitControls />
+                        <OrbitControls autoRotate />
                     </Canvas>
                 </div>
 
                 <div className="modelDetails">
                     <div className="modelTitle">Caribbean reef shark</div>
                     <Details />
+                    <div className="QRContainer">
+                        <img className="QRCode" src="https://storage.echoar.xyz/wispy-violet-4999/bb0b2f71-0ef9-480c-ad8b-95c83ae6516c" alt="QR" />
+                        <a href="https://go.echoar.xyz/B8NN" target="_blank" rel="noreferrer">
+                            <button className="AR_button">View in AR</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

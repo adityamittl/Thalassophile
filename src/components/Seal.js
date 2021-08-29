@@ -32,12 +32,28 @@ function Model(props) {
 
 function Details() {
     const snap = useSnapshot(state)
-    return (
-        <div className="pb-12 w-full ">
-            {snap.current}
-            The spotted seal (Phoca largha), also known as the larga seal or largha seal, is a member of the family Phocidae, and is considered a "true seal". It inhabits ice floes and waters of the north Pacific Ocean and adjacent seas. It is primarily found along the continental shelf of the Beaufort, Chukchi, Bering and Okhotsk Seas and south to the northern Yellow Sea and it migrates south as far as northern Huanghai and the western Sea of Japan. It is also found in Alaska from the southeastern Bristol Bay to Demarcation Point during the ice-free seasons of summer and autumn when spotted seals mate and have pups.
-        </div>
-    );
+    if (snap.current === "SealEyesTex") {
+        return (
+            <div className="">
+                <div className="heading">Seal eyes</div>
+                <dic className="model_details">Seals have large eyes to allow them better vision underwater. On land their vision is greatly reduced. Their lenses are enlarged and almost round, adapted for focusing on light that is refracted upon entering the water. </dic>
+            </div>
+        )
+    }
+    else if (snap.current === "SealBodyTex") {
+        return (
+            <div className="">
+                <div className="heading">Seal flippers</div>
+                <dic className="model_details">All pinnipeds have four flippers, a layer of blubber, and sensitive whiskers on their snouts. The seal has all of these and a lot more. Like many marine animals, seals have streamlined fusiform bodies, tapered at both ends. </dic>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div>Click on seal to know more</div>
+        )
+    }
+
 }
 
 export default function Seal() {
@@ -53,7 +69,6 @@ export default function Seal() {
                         <Suspense fallback={null}>
                             <Model scale={5} />
                             <Environment preset="city" />
-                            <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>
                         <OrbitControls />
                     </Canvas>
@@ -61,6 +76,13 @@ export default function Seal() {
 
                 <div className="modelDetails">
                     <div className="modelTitle">Dotted White Seal</div>
+                    <div>The spotted seal (Phoca largha), also known as the larga seal or largha seal, is a member of the family Phocidae, and is considered a "true seal". It inhabits ice floes and waters of the north Pacific Ocean and adjacent seas. It is primarily found along the continental shelf of the Beaufort, Chukchi, Bering and Okhotsk Seas and south to the northern Yellow Sea and it migrates south as far as northern Huanghai and the western Sea of Japan. It is also found in Alaska from the southeastern Bristol Bay to Demarcation Point during the ice-free seasons of summer and autumn when spotted seals mate and have pups.</div>
+                    <div className="QRContainer">
+                        <img className="QRCode" src="https://storage.echoar.xyz/wispy-violet-4999/35b2e755-d55d-4548-8ced-69399fae58f4" alt="QR" />
+                        <a href="https://go.echoar.xyz/UnWT" target="_blank" rel="noreferrer">
+                            <button className="AR_button">View in AR</button>
+                        </a>
+                    </div>
                     <Details />
                 </div>
             </div>

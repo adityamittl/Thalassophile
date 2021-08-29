@@ -50,7 +50,6 @@ function Details() {
     const snap = useSnapshot(state)
     return (
         <div className="pb-12 w-full ">
-            {snap.current}
             The great hammerhead (Sphyrna mokarran) is the largest species of hammerhead shark, belonging to the family Sphyrnidae, attaining an average length of 4.6 m (15 ft) and reaching a maximum length of 6.1 m (20 ft). It is found in tropical and warm temperate waters worldwide, inhabiting coastal areas and the continental shelf. The great hammerhead can be distinguished from other hammerheads by the shape of its "hammer" (called the "cephalofoil"), which is wide with an almost straight front margin, and by its tall, sickle-shaped first dorsal fin. This work is based on "Model 73A - Great Hammerhead Shark" (https://sketchfab.com/3d-models/model-73a-great-hammerhead-shark-77d52f2b0e084fe7bcefbc86b920f080) by DigitalLife3D (https://sketchfab.com/DigitalLife3D) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
         </div>
     );
@@ -71,13 +70,20 @@ export default function Hammer_Head() {
                             <Environment preset="city" />
                             <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={1.5} far={0.8} />
                         </Suspense>
-                        <OrbitControls />
+                        <OrbitControls autoRotate />
                     </Canvas>
                 </div>
 
                 <div className="modelDetails">
                     <div className="modelTitle">Great hammerhead</div>
                     <Details />
+                    <div className="QRContainer">
+                        <img className="QRCode" src="https://storage.echoar.xyz/wispy-violet-4999/37b5c444-318d-4f63-ae56-cd84730af670" alt="QR" />
+                        <a href="https://go.echoar.xyz/qg1W" target="_blank" rel="noreferrer">
+                            <button className="AR_button">View in AR</button>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </>
