@@ -16,7 +16,7 @@ function Main() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path='/' exact component={Home} />
+        <Route path='/' component={Home} />
         <Route path='/whiteShark' exact component={WhiteShark} />
         <Route path='/humpbackWhale' exact component={HumpbackWhale} />
         <Route path='/hammerHead' exact component={HammerHead} />

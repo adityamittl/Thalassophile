@@ -37,9 +37,9 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-links' onClick={handleLogout}>
+                        <div className='nav-links' onClick={handleLogout}>
                             <img alt="logout" src="https://img.icons8.com/cotton/30/000000/logout-rounded-left.png" />
-                        </Link>
+                        </div>
                     </li>
                 </ul>
             </nav>
