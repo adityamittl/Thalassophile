@@ -22,12 +22,9 @@ Thalassophile means a lover of the sea.
 - User need to Log In/Sign Up
 -
 
-## 🔨 How we built it
+## 🔨 Tech Stack
 
-- React Js
-- Firebase
-- Three Js
-- React-three-fiber
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Threejs](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
 
 ## 🧠 Challenges we ran into
 
