@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: #094886;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -14,6 +14,11 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    margin-top: 5px;
+  }
+  
+  .navbar-logo img{
+      width: 280px;
   }
   
   .fa-firstdraft {
@@ -46,9 +51,10 @@
   }
   
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: #2013e2;
     border-radius: 4px;
     transition: all 0.2s ease-out;
+    color: white;
   }
   
   .fa-bars {
