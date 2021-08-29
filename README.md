@@ -1,6 +1,6 @@
 # Thalassophile
 
-## Why the name **Thalassophile**
+## 🤔 Why the name **Thalassophile**
 
 Thalassophile means a lover of the sea.
 
@@ -8,10 +8,12 @@ Thalassophile means a lover of the sea.
 
 ## 💻 What it does
 
+Thalassophile exhibits various sea animals (specially Sharks), elucidate their features and imitate them into real world using AR (Augmented Reality) technology.
+
 ## ⚙️ How it works
 
 - User need to Log In/Sign Up
--
+- 
 
 ## 🔨 Tech Stack
 
@@ -27,13 +29,12 @@ We are happy that we completed the project in this short frame of time and we le
 
 How to use Three Js, and collaboration.
 
-## 🚀 What's next for Money Trek
+## 🚀 What's next for Thalassophile
 
 - Adding more languages
 - Add more 3D models
 
 ## Installing and running
-
 ```
 npm install
 npm start
