@@ -6,6 +6,8 @@ Thalassophile means a lover of the sea.
 
 ## 💡 Inspiration
 
+Since the theme of the hackathon was Blahaj himself, we chose to do a project that was more lighthearted. So we build a site where people can not only know about the sea animals, but also view and interact with the 3D models and imitate them into real world using AR (Augmented Reality) technology.
+
 ## 💻 What it does
 
 Thalassophile exhibits various sea animals (specially Sharks), elucidate their features and imitate them into real world using AR (Augmented Reality) technology.
